@@ -1,0 +1,20 @@
+﻿<Window x:Class="TheNextCar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TheNextCar"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="415.815" Width="618.84">
+    <Grid Margin="0,0,2,0" Height="384" VerticalAlignment="Top" HorizontalAlignment="Right" Width="609">
+        <Button x:Name="startButton" Content="STOPED" HorizontalAlignment="Left" Margin="42,323,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.084,-0.972" Click="OnstartButtonClicked"/>
+        <Button x:Name="DoorOpenButton" Content="CLOSE" HorizontalAlignment="Left" Margin="203,323,0,0" VerticalAlignment="Top" Width="75" Click="OnDoorOpenButtonClicked"/>
+        <Button x:Name="LockDoorButton" Content="LOCK" HorizontalAlignment="Left" Margin="357,323,0,0" VerticalAlignment="Top" Width="75" Click="OnLockDoorButtonClicked"/>
+        <Button x:Name="AccuButton" Content="OFF" HorizontalAlignment="Left" Margin="529,323,0,0" VerticalAlignment="Top" Width="75" Click="OnAccuButtonClicked"/>
+        <Label Name="status" Content="Label" HorizontalAlignment="Left" Margin="63,358,0,0" Height="26" VerticalAlignment="Top"/>
+        <Label Name="DoorOpenState" Content="door is open" HorizontalAlignment="Left" Margin="223,358,0,0" VerticalAlignment="Top"/>
+        <Label Name="DoorCloseState" Content="door is unlocked" HorizontalAlignment="Left" Margin="373,358,0,0" VerticalAlignment="Top"/>
+        <Label Name="AccuState" Content="no power" HorizontalAlignment="Left" Margin="550,358,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="314" Margin="42,0,0,0" VerticalAlignment="Top" Width="562" RenderTransformOrigin="0.442,0.028" Source="Assets/navigation.jpg"/>
+    </Grid>
+</Window>
